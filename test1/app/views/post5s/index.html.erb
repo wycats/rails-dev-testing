@@ -1,0 +1,21 @@
+<h1>Listing post5s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @post5s.each do |post5| %>
+  <tr>
+    <td><%= link_to 'Show', post5 %></td>
+    <td><%= link_to 'Edit', edit_post5_path(post5) %></td>
+    <td><%= link_to 'Destroy', post5, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post5', new_post5_path %>

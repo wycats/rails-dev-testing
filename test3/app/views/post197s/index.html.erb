@@ -1,0 +1,21 @@
+<h1>Listing post197s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @post197s.each do |post197| %>
+  <tr>
+    <td><%= link_to 'Show', post197 %></td>
+    <td><%= link_to 'Edit', edit_post197_path(post197) %></td>
+    <td><%= link_to 'Destroy', post197, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post197', new_post197_path %>

@@ -1,0 +1,21 @@
+<h1>Listing post64s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @post64s.each do |post64| %>
+  <tr>
+    <td><%= link_to 'Show', post64 %></td>
+    <td><%= link_to 'Edit', edit_post64_path(post64) %></td>
+    <td><%= link_to 'Destroy', post64, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post64', new_post64_path %>

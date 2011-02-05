@@ -1,0 +1,17 @@
+<%= form_for(@post106) do |f| %>
+  <% if @post106.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post106.errors.count, "error") %> prohibited this post106 from being saved:</h2>
+
+      <ul>
+      <% @post106.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

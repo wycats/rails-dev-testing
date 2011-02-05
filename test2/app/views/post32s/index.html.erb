@@ -1,0 +1,21 @@
+<h1>Listing post32s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @post32s.each do |post32| %>
+  <tr>
+    <td><%= link_to 'Show', post32 %></td>
+    <td><%= link_to 'Edit', edit_post32_path(post32) %></td>
+    <td><%= link_to 'Destroy', post32, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post32', new_post32_path %>

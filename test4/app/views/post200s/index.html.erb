@@ -1,0 +1,21 @@
+<h1>Listing post200s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @post200s.each do |post200| %>
+  <tr>
+    <td><%= link_to 'Show', post200 %></td>
+    <td><%= link_to 'Edit', edit_post200_path(post200) %></td>
+    <td><%= link_to 'Destroy', post200, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post200', new_post200_path %>
